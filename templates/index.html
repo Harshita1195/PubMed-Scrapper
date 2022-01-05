@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PubMed Scrapper</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="static/css/style.css">
+
+</head>
+<body>
+    
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i style="color: blue;" class="fas fa-map"></i> PubMed Scrapper</a>
+
+</header>
+
+<!-- header section ends -->
+
+<!-- search form  -->
+
+<div class="search-form">
+
+    <div id="close-search" class="fas fa-times"></div>
+
+    <form action="">
+        <input type="search" name="" placeholder="search here..." id="search-box">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</div>
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="box second" style="background: url(static/images/image2.jpg) no-repeat;">
+                    <div class="content">
+                        <span> Search Research Paper</span>
+                         <div class="form" style="font-size: 15px">
+                            <form action="/" method="POST">
+                                <label><b>Enter the keyword or title:</b></label>
+                                <input class="form-control" style="font-size: 13px" type="text" name="content" id="content" required="required"><br><br>
+                                <label><b>Enter the expected article count you need:</b></label>
+                                <input class="form-control" style="font-size: 13px" name="expected_articles" id="expected_articles" required="required"><br><br>
+                                <button  style="font-size:15px" class="btn btn-info" type="submit ">Search</button>
+                            </form>
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- home section ends -->
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="static/js/script.js"></script>
+
+</body>
+</html>
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Pubmed Scrapper</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <br>
+            <h1 style="text-align: center">Search Research Paper</h1><br>
+             <div class="form">
+                <form action="/" method="POST">
+                    <label><b>Enter the keyword or title:</b></label> <input type="text" name="content" id="content" ><br><br>
+                    <label><b>Enter the expected article count you need:</b></label> <input name="expected_articles" id="expected_articles"><br><br>
+                    <input type="submit" value="Search">
+                </form>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
+-->
