@@ -4,6 +4,7 @@ from flask_cors import CORS, cross_origin
 import pandas as pd
 import csv, json
 from scrapping import scrapper
+from pymongo import MongoClient
 
 app = Flask(__name__)  # initialising the flask app with the name 'app'
 
@@ -24,9 +25,12 @@ def index():
         data = json.load(f)
 
         return render_template('results.html', data=data)
-
     else:
         return render_template('index.html')
+
+@app.errorhandler(404)
+def not_found(e):
+    return render_template("404.html")
         
 if __name__=='__main__':
     app.run(debug=True)

@@ -1,6 +1,5 @@
 Flask==1.1.1
-flask_cors
-gunicorn
+gunicorn==19.9.0
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
 numpy>=1.17.2
@@ -8,3 +7,4 @@ pandas>=0.19
 jsonify
 requests
 bs4
+flask_cors
